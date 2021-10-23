@@ -1,0 +1,31 @@
+{
+  "color": {
+    "primary-100": {
+      "value": "#C7F9DA"
+    },
+    "primary-200": {
+      "value": "#92F4C1"
+    },
+    "primary-300": {
+      "value": "#59E0A6"
+    },
+    "primary-400": {
+      "value": "#30C190"
+    },
+    "primary-500": {
+      "value": "#009874"
+    },
+    "primary-600": {
+      "value": "#008270"
+    },
+    "primary-700": {
+      "value": "#006D68"
+    },
+    "primary-800": {
+      "value": "#005358"
+    },
+    "primary-900": {
+      "value": "#003E48"
+    }
+  }
+}

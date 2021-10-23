@@ -1,0 +1,12 @@
+{
+  "name": "@strail/tokens",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.0.3"
+  }
+}

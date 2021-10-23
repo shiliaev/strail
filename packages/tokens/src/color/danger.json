@@ -1,0 +1,31 @@
+{
+  "color": {
+    "danger-100": {
+      "value": "#FDE6D1"
+    },
+    "danger-200": {
+      "value": "#FCC8A4"
+    },
+    "danger-300": {
+      "value": "#F6A075"
+    },
+    "danger-400": {
+      "value": "#ED7A52"
+    },
+    "danger-500": {
+      "value": "#E2411D"
+    },
+    "danger-600": {
+      "value": "#C22715"
+    },
+    "danger-700": {
+      "value": "#A2130E"
+    },
+    "danger-800": {
+      "value": "#83090E"
+    },
+    "danger-900": {
+      "value": "#6C0511"
+    }
+  }
+}

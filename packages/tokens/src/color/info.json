@@ -1,0 +1,31 @@
+{
+  "color": {
+    "info-100": {
+      "value": "#CBFDFC"
+    },
+    "info-200": {
+      "value": "#98F6FB"
+    },
+    "info-300": {
+      "value": "#63E3F5"
+    },
+    "info-400": {
+      "value": "#3CC9EC"
+    },
+    "info-500": {
+      "value": "#02A5E0"
+    },
+    "info-600": {
+      "value": "#0180C0"
+    },
+    "info-700": {
+      "value": "#0160A1"
+    },
+    "info-800": {
+      "value": "#004481"
+    },
+    "info-900": {
+      "value": "#00316B}"
+    }
+  }
+}

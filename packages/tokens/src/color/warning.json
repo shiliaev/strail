@@ -1,0 +1,31 @@
+{
+  "color": {
+    "warning-100": {
+      "value": "#FEFCCE"
+    },
+    "warning-200": {
+      "value": "#FDF99D"
+    },
+    "warning-300": {
+      "value": "#FBF46C"
+    },
+    "warning-400": {
+      "value": "#F8EE47"
+    },
+    "warning-500": {
+      "value": "#F4E50C"
+    },
+    "warning-600": {
+      "value": "#D1C308"
+    },
+    "warning-700": {
+      "value": "#AFA206"
+    },
+    "warning-800": {
+      "value": "#8D8103"
+    },
+    "warning-900": {
+      "value": "#756A02"
+    }
+  }
+}

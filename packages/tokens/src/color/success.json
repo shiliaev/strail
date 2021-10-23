@@ -1,0 +1,31 @@
+{
+  "color": {
+    "success-100": {
+      "value": "#E6FBD6"
+    },
+    "success-200": {
+      "value": "#C8F8AE"
+    },
+    "success-300": {
+      "value": "#9EEA82"
+    },
+    "success-400": {
+      "value": "#75D65F"
+    },
+    "success-500": {
+      "value": "#3FBC31"
+    },
+    "success-600": {
+      "value": "#26A123"
+    },
+    "success-700": {
+      "value": "#18871F"
+    },
+    "success-800": {
+      "value": "#0F6D1C"
+    },
+    "success-900": {
+      "value": "#095A1B"
+    }
+  }
+}

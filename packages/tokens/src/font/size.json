@@ -1,0 +1,70 @@
+{
+  "font-size": {
+    "h1": {
+      "mobile": {
+        "value": "34px"
+      },
+      "tablet": {
+        "value": "40px"
+      },
+      "desktop": {
+        "value": "48px"
+      }
+    },
+    "h2": {
+      "mobile": {
+        "value": "28px"
+      },
+      "tablet": {
+        "value": "31px"
+      },
+      "desktop": {
+        "value": "38px"
+      }
+    },
+    "h3": {
+      "mobile": {
+        "value": "23px"
+      },
+      "tablet": {
+        "value": "25px"
+      },
+      "desktop": {
+        "value": "28px"
+      }
+    },
+    "h4": {
+      "mobile": {
+        "value": "19px"
+      },
+      "tablet": {
+        "value": "20px"
+      },
+      "desktop": {
+        "value": "24px"
+      }
+    },
+    "body-medium": {
+      "mobile": {
+        "value": "15px"
+      },
+      "tablet": {
+        "value": "16px"
+      },
+      "desktop": {
+        "value": "18px"
+      }
+    },
+    "body-small": {
+      "mobile": {
+        "value": "12px"
+      },
+      "tablet": {
+        "value": "13px"
+      },
+      "desktop": {
+        "value": "14px"
+      }
+    }
+  }
+}
