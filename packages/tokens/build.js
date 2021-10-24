@@ -1,4 +1,5 @@
-const StyleDictionary = require('style-dictionary').extend({
+import StyleDictionary from "style-dictionary";
+StyleDictionary.extend({
   source: ['./src/**/*.json'],
   platforms: {
     scss: {
