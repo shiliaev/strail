@@ -25,5 +25,13 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">= 16.14.0",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1"
   }
 }
