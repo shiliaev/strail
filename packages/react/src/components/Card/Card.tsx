@@ -1,6 +1,7 @@
 import clsx from 'clsx';
-import {ReactNode} from 'react'
-import {Box, PolymorphicComponent} from 'react-polymorphic-box';
+import {ElementType, ReactNode} from 'react'
+import {Box, PolymorphicComponentProps} from 'react-polymorphic-box';
+import {Typography, TypographyVariant} from "../Typography";
 
 export enum CardSize {
     small = 'small',
@@ -14,8 +15,9 @@ export enum CardVariant {
     tertiary = 'tertiary',
 }
 
-export interface CardProps {
+export interface CardOwnProps {
     className?: string;
+    title?: ReactNode;
     children?: ReactNode;
     size?: CardSize;
     variant?: CardVariant;
@@ -23,13 +25,15 @@ export interface CardProps {
 
 const defaultElement = 'div';
 
-export const Card: PolymorphicComponent<CardProps, typeof defaultElement> = ({
+export type CardProps<E extends ElementType = typeof defaultElement> = PolymorphicComponentProps<E, CardOwnProps>;
+export function Card<E extends ElementType = typeof defaultElement>({
                                                                                      className,
                                                                                      children,
                                                                                      size = CardSize.medium,
+                                                                                     title,
                                                                                      variant = CardVariant.primary,
                                                                                      ...props
-                                                                                 }: CardProps) => {
+                                                                                 }: CardProps<E>) {
     return (<Box
         className={clsx(className, 'sl-Card', {
             [`sl-Card_size_${size}`]: size,
@@ -37,6 +41,7 @@ export const Card: PolymorphicComponent<CardProps, typeof defaultElement> = ({
         })}
         {...props}
     >
+        {title && <Typography className={'sl-Card__title'} variant={TypographyVariant.Heading2}>{title}</Typography>}
         {children}
     </Box>)
 }
