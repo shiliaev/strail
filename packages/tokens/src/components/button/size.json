@@ -1,0 +1,13 @@
+{
+  "button-size": {
+    "small": {
+      "value": "42px"
+    },
+    "medium": {
+      "value": "54px"
+    },
+    "large": {
+      "value": "62px"
+    }
+  }
+}
