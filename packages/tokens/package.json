@@ -6,6 +6,12 @@
   "scripts": {
     "build": "node build.js"
   },
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
   "devDependencies": {
     "style-dictionary": "^3.0.3"
   }
