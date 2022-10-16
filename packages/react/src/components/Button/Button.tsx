@@ -23,12 +23,8 @@ export interface ButtonOwnProps {
     right?: ReactNode;
 }
 
-export type ButtonProps<
-    E extends ElementType
-    > = PolymorphicComponentProps<E, ButtonOwnProps>;
-
 const defaultElement = 'button';
-
+export type ButtonProps<E extends ElementType = typeof defaultElement> = PolymorphicComponentProps<E, ButtonOwnProps>;
 export function Button<E extends ElementType = typeof defaultElement>({
      className,
      children,

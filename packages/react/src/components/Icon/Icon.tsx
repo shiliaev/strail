@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import type { ElementType } from 'react'
-import { PolymorphicComponent } from 'react-polymorphic-box';
+import {PolymorphicComponentProps} from 'react-polymorphic-box';
 
 export enum IconSize {
     small = 'small',
@@ -8,7 +8,7 @@ export enum IconSize {
     large = 'large',
 }
 
-export interface IconProps {
+export interface IconOwnProps {
     icon: ElementType;
     className?: string;
     size?: IconSize;
@@ -16,12 +16,13 @@ export interface IconProps {
 
 const defaultElement = 'div';
 
-export const Icon: PolymorphicComponent<IconProps, typeof defaultElement> = ({
+export type IconProps<E extends ElementType = typeof defaultElement> = PolymorphicComponentProps<E, IconOwnProps>;
+export function Icon<E extends ElementType = typeof defaultElement>({
          icon,
          className,
          size = IconSize.medium,
          ...props
-    }: IconProps) => {
+    }: IconProps<E>) {
     const Component = icon;
 
     return <Component

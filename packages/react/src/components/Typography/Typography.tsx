@@ -1,6 +1,5 @@
 import clsx from 'clsx';
-import {ReactNode} from 'react'
-import {Box, PolymorphicComponent} from 'react-polymorphic-box';
+import {ElementType, ReactNode} from 'react';
 
 export enum TypographyVariant {
     Heading1 = 'Heading1',
@@ -9,24 +8,31 @@ export enum TypographyVariant {
     Heading4 = 'Heading4'
 }
 
-
 export interface TypographyProps {
     className?: string;
     children?: ReactNode;
-    variant?: TypographyVariant;
+    variant: TypographyVariant;
 }
 
-const defaultElement = 'div';
+const mapVariantToElementType: Record<TypographyVariant, ElementType> = {
+    [TypographyVariant.Heading1]: 'h1',
+    [TypographyVariant.Heading2]: 'h2',
+    [TypographyVariant.Heading3]: 'h3',
+    [TypographyVariant.Heading4]: 'h4',
+}
 
-export const Typography: PolymorphicComponent<TypographyProps, typeof defaultElement> = ({
+export function Typography({
                                                                                              className,
                                                                                              children,
                                                                                              variant,
                                                                                              ...props
-                                                                                         }: TypographyProps) => {
-    return <Box className={clsx(className, 'sl-Typography', {
+                                                                                         }: TypographyProps) {
+    const Component = mapVariantToElementType[variant];
+
+    return <Component
+        className={clsx(className, 'sl-Typography', {
         [`sl-Typography_variant_${variant}`]: variant
     })} {...props}>
         {children}
-    </Box>
+    </Component>
 }
