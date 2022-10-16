@@ -2,6 +2,8 @@
 
 React UI Library
 
+**Under rapid development. API may be subject to change.**
+
 ## Features
 
 TBD 
