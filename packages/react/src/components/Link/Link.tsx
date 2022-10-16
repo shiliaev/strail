@@ -1,20 +1,19 @@
 import clsx from 'clsx';
-import {ReactNode} from 'react'
-import {Box, PolymorphicComponent} from 'react-polymorphic-box';
+import {ElementType, ReactNode} from 'react'
+import {Box, PolymorphicComponent, PolymorphicComponentProps} from 'react-polymorphic-box';
 
-export interface LinkProps {
+export interface LinkOwnProps {
     className?: string;
     children?: ReactNode;
 }
-
 const defaultElement = 'a';
-
-export const Link: PolymorphicComponent<LinkProps, typeof defaultElement> = ({
+export type LinkProps<E extends ElementType = typeof defaultElement> = PolymorphicComponentProps<E, LinkOwnProps>;
+export function Link<E extends ElementType = typeof defaultElement>({
                                                                                      className,
                                                                                      children,
                                                                                      ...props
-                                                                                 }: LinkProps) => {
-    return <Box className={clsx(className, 'sl-Typography')} {...props}>
+                                                                                 }: LinkProps<E>) {
+    return <Box as={defaultElement} className={clsx(className, 'sl-Link')} {...props}>
         {children}
     </Box>
 }
