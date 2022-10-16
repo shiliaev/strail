@@ -20,6 +20,7 @@
     "bootstrap": "yarn && lerna bootstrap"
   },
   "dependencies": {
+    "chokidar-cli": "3.0.0",
     "typescript": "4.7.4"
   },
   "commitlint": {
