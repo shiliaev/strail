@@ -1,6 +1,6 @@
-import {StrailThemeContext} from "../components";
-import {useContext} from "react";
+import { StrailThemeContext } from "../components";
+import { useContext } from "react";
 
 export function useTheme() {
-    return useContext(StrailThemeContext);
+  return useContext(StrailThemeContext);
 }

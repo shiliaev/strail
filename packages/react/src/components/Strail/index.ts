@@ -1,2 +1,2 @@
-export * from './StrailThemeContext'
-export * from './Strail'
+export * from "./StrailThemeContext";
+export * from "./Strail";
