@@ -1,5 +1,6 @@
 {
   "name": "@strail/tokens",
+  "sideEffects": false,
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
