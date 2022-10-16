@@ -1,0 +1,49 @@
+.sl-Button {
+  display: inline-flex;
+  padding: var(--spacing-m) var(--spacing-xl);
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-body-medium-desktop);
+}
+
+.sl-Button_size_small {
+  height: 42px;
+  font-size: var(--font-size-body-small-desktop);
+}
+
+.sl-Button_size_medium {
+  height: 54px;
+  padding: var(--spacing-m) var(--spacing-2xl);
+}
+
+.sl-Button_size_large {
+  height: 62px;
+  padding: var(--spacing-m) var(--spacing-3xl);
+}
+
+.sl-Button_variant_primary {
+  background: var(--color-primary-400);
+  color: #fff;
+  transition: background ease-out .1s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--color-primary-300);
+  }
+}
+
+.sl-Button_variant_secondary {
+  background: transparent;
+  color: var(--color-primary-300);
+  border: 1px solid currentColor;
+}
+
+.sl-Button_disabled {
+  cursor: not-allowed;
+}
