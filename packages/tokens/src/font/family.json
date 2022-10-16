@@ -1,1 +1,7 @@
-{}
+{
+  "font-family": {
+    "roboto": {
+      "value": "Roboto"
+    }
+  }
+}
