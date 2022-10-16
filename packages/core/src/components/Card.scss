@@ -1,15 +1,18 @@
 .sl-Card {
   display: block;
   padding: var(--spacing-m);
-  border-radius: var(--border-radius-l);
-  background: #fff; // todo use token & theme;
-  border: 1px solid #79747E; // todo use token
-  transition: border-radius ease-out .1s;
-  // todo box-shadow
+  border-radius: var(--border-radius-xl);
+  background-color: var(--color-primary-100);
+  transition: border-radius ease-out .1s, background-color ease-out .1s;
 
   &:active,
   &:hover,
   &:focus {
+    background-color: var(--color-primary-200);
     border-radius: var(--border-radius-m);
   }
+}
+
+.sl-Card__title {
+  margin: 0 0 var(--spacing-xs);
 }
