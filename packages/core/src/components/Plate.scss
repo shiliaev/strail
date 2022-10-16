@@ -1,0 +1,31 @@
+.sl-Plate {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-m);
+  border: 1px solid var(--color-primary-900);
+  border-radius: var(--border-radius-s);
+}
+
+.sl-Plate__title {
+  margin: 0 0 var(--spacing-xs);
+}
+
+.sl-Plate_variant_info {
+  background: var(--color-info-100);
+  border-color: var(--color-info-900);
+}
+
+.sl-Plate_variant_success {
+  background: var(--color-success-100);
+  border-color: var(--color-success-900);
+}
+
+.sl-Plate_variant_warning {
+  background: var(--color-warning-100);
+  border-color: var(--color-warning-900);
+}
+
+.sl-Plate_variant_error {
+  background: var(--color-danger-100);
+  border-color: var(--color-danger-900);
+}
