@@ -1,0 +1,22 @@
+{
+  "border-radius": {
+    "xs": {
+      "value": "4px"
+    },
+    "s": {
+      "value": "8px"
+    },
+    "m": {
+      "value": "12px"
+    },
+    "l": {
+      "value": "16px"
+    },
+    "xl": {
+      "value": "20px"
+    },
+    "2xl": {
+      "value": "24px"
+    }
+  }
+}

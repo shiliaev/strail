@@ -1,0 +1,10 @@
+{
+  "theme": {
+    "light": {
+      "value": "light"
+    },
+    "dark": {
+      "value": "dark"
+    }
+  }
+}
