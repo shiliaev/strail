@@ -12,17 +12,17 @@
 }
 
 .sl-Button_size_small {
-  height: 42px;
+  height: var(--button-size-small);
   font-size: var(--font-size-body-small-desktop);
 }
 
 .sl-Button_size_medium {
-  height: 54px;
+  height: var(--button-size-medium);
   padding: var(--spacing-m) var(--spacing-2xl);
 }
 
 .sl-Button_size_large {
-  height: 62px;
+  height: var(--button-size-large);
   padding: var(--spacing-m) var(--spacing-3xl);
 }
 
