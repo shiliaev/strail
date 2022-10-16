@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import {Icon, IconProps} from "./Icon";
+import { Icon, IconProps } from "./Icon";
 
 export default {
-    component: Icon,
+  component: Icon,
 };
 
-const Template = (args: IconProps) => <Icon {...args} />
+const Template = (args: IconProps) => <Icon {...args} />;
 
 export const Sandbox = Template.bind({});

@@ -13,7 +13,9 @@
     "build:declarations": "tsc --jsx react-jsx --declaration --emitDeclarationOnly --outdir lib src/components/index.ts",
     "build:components": "yarn esbuild src/components/index.ts --bundle --outdir=lib --external:'react' --external:'clsx' --target=esnext --allow-overwrite --format=esm --jsx=transform",
     "build": "run-p build:*",
-    "watch": "yarn esbuild src/components/index.ts --bundle --watch --outdir=lib --external:'react' --external:'clsx' --target=esnext --allow-overwrite --jsx-dev --format=esm"
+    "watch": "yarn esbuild src/components/index.ts --bundle --watch --outdir=lib --external:'react' --external:'clsx' --target=esnext --allow-overwrite --jsx-dev --format=esm",
+    "lint": "eslint src/**/*.{ts,tsx} && prettier src --check",
+    "lint:fix": "eslint src/**/*.{ts,tsx} --fix && prettier src --write"
   },
   "directories": {
     "lib": "lib"

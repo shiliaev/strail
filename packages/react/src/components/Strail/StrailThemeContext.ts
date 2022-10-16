@@ -1,13 +1,13 @@
-import {createContext} from "react";
+import { createContext } from "react";
 
-export type StrailTheme = 'light' | 'dark';
+export type StrailTheme = "light" | "dark";
 
 export interface StrailThemeContext {
-    theme: StrailTheme;
-    setTheme: (newTheme: StrailTheme) => void;
+  theme: StrailTheme;
+  setTheme: (newTheme: StrailTheme) => void;
 }
 
 export const StrailThemeContext = createContext<StrailThemeContext>({
-    theme: 'light',
-    setTheme: (newTheme: StrailTheme) => {}
+  theme: "light",
+  setTheme: (newTheme: StrailTheme) => {},
 });
