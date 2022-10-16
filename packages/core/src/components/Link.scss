@@ -1,0 +1,13 @@
+.sl-Link {
+  color: var(--color-primary-600);
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary-400);
+  }
+
+  &:focus {
+    outline-color: var(--color-primary-400);
+    outline-offset: 3px;
+  }
+}
