@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`has children 1`] = `
+<div
+  className="slButton"
+>
+  <span
+    data-testid="Button__children"
+  >
+    <div />
+  </span>
+</div>
+`;
+
+exports[`has left slot 1`] = `
+<div
+  className="slButton"
+>
+  <span
+    data-testid="Button__left"
+  >
+    <div />
+  </span>
+  <span
+    data-testid="Button__children"
+  />
+</div>
+`;
+
+exports[`has right slot 1`] = `
+<div
+  className="slButton"
+>
+  <span
+    data-testid="Button__children"
+  />
+  <span
+    data-testid="Button__right"
+  >
+    <div />
+  </span>
+</div>
+`;
