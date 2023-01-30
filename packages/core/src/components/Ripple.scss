@@ -1,0 +1,50 @@
+.sl-Ripple {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  outline: none;
+}
+
+.sl-Ripple__ripple {
+  opacity: .5;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .3);
+  animation-name: ripple-press-start;
+  animation-timing-function: linear;
+  animation-duration: .3s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+@keyframes ripple-press-start {
+  0% {
+    opacity: .5;
+    transform: translate(-50%, -50%) scale(.4);
+  }
+
+  100% {
+    opacity: .5;
+    transform: translate(-50%, -50%) scale(.8);
+  }
+}
+
+@keyframes ripple-press-end {
+  0% {
+    opacity: .5;
+    transform: translate(-50%, -50%) scale(.8);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+}
