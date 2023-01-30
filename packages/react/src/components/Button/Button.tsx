@@ -1,6 +1,7 @@
 import clsx from "clsx";
-import { ReactNode, ElementType } from "react";
+import {ReactNode, ElementType, useRef} from "react";
 import { Box, PolymorphicComponentProps } from "react-polymorphic-box";
+import {Ripple} from "../Ripple/Ripple";
 
 export enum ButtonSize {
   small = "small",
@@ -36,8 +37,11 @@ export function Button<E extends ElementType = typeof defaultElement>({
   right,
   ...props
 }: ButtonProps<E>) {
+  const boxRef = useRef<null>();
+
   return (
     <Box
+      ref={boxRef}
       as={defaultElement}
       className={clsx(className, "sl-Button", {
         "sl-Button_disabled": disabled,
@@ -46,6 +50,7 @@ export function Button<E extends ElementType = typeof defaultElement>({
       })}
       {...props}
     >
+      <Ripple containerRef={boxRef} />
       {left && <span data-testid={"Button__left"}>{left}</span>}
       <span data-testid={"Button__children"}>{children}</span>
       {right && <span data-testid={"Button__right"}>{right}</span>}
