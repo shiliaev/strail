@@ -29,6 +29,7 @@
     }
   },
   "scripts": {
+    "build": "yarn workspaces foreach run build",
     "bootstrap": "yarn",
     "test": "exit 0"
   },
