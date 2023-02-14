@@ -29,7 +29,8 @@
     }
   },
   "scripts": {
-    "bootstrap": "yarn"
+    "bootstrap": "yarn",
+    "test": "exit 0"
   },
   "commitlint": {
     "extends": [
