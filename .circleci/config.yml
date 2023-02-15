@@ -9,8 +9,9 @@ orbs:
 
 jobs:
   build_and_test: # this can be any name you choose
-    executor: node/default # use the default executor defined within the orb
-    version: 16.19.0
+    executor:
+      name: node/default
+      tag: '16.9.0'
     steps:
       - checkout
       - node/install-packages:
