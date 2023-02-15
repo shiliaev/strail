@@ -31,8 +31,6 @@ jobs:
           at: ~/project
       - heroku/deploy-via-git:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
-          api-key: $HEROKU_API_KEY
-          app-name: $HEROKU_APP_NAME
 
 
 # Invoke jobs via workflows
