@@ -11,7 +11,7 @@
     "src"
   ],
   "dependencies": {
-    "@strail/react": "^0.0.1",
-    "@strail/tokens": "^0.0.1"
+    "@strail/react": "0.0.1",
+    "@strail/tokens": "0.0.1"
   }
 }
