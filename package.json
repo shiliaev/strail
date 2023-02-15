@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "http-server packages/react/storybook-static",
-    "build": "yarn workspaces foreach run build",
+    "build": "yarn workspaces foreach --parallel --jobs 4 run build",
     "bootstrap": "yarn",
     "test": "exit 0"
   },
