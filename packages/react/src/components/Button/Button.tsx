@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import {ReactNode, ElementType, useRef} from "react";
+import React, {ReactNode, ElementType, useRef} from "react";
 import { Box, PolymorphicComponentProps } from "react-polymorphic-box";
 import {Ripple} from "../Ripple/Ripple";
 
@@ -37,7 +37,7 @@ export function Button<E extends ElementType = typeof defaultElement>({
   right,
   ...props
 }: ButtonProps<E>) {
-  const boxRef = useRef<null>();
+  const boxRef = useRef(null);
 
   return (
     <Box

@@ -21,7 +21,7 @@ type DataWithRowKey<D extends DataType> = D & { [RowKey]: string };
 
 export function Table<D extends DataType>({ headers, data }: TableProps<D>) {
     const mappedData = useMemo<Array<DataWithRowKey<DataType>>>(() => {
-        return data?.map((values) => ({ [RowKey]: nanoid(), ...values }));
+        return data?.map((values) => ({ [RowKey]: nanoid(), ...values })) || [];
     }, [data]);
 
     const onHeaderClick = useCallback(
