@@ -4,6 +4,7 @@ node_modules
 lib
 .DS_Store
 Thumbs.db
+storybook-static
 
 # yarn 3 without zero installs
 .pnp.*

@@ -9,10 +9,10 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build:storybook": "build-storybook --quiet",
     "build:declarations": "tsc",
     "build:components": "yarn esbuild src/components/index.ts --bundle --outdir=lib --external:'react' --external:'clsx' --target=esnext --allow-overwrite --format=esm --jsx=transform",
-    "build": "run-p \"build:*\"",
+    "build": "run-s build:components build:declarations build:storybook",
     "watch": "yarn esbuild src/components/index.ts --bundle --watch --outdir=lib --external:'react' --external:'clsx' --target=esnext --allow-overwrite --jsx-dev --format=esm",
     "lint": "eslint src/**/*.{ts,tsx} && prettier src --check",
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix && prettier src --write"
